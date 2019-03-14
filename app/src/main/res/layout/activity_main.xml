@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/imcico"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Peso  (KG)"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/edit_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Altura  (m)"
+                android:layout_marginTop="10dp"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btn_calculo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="calcular"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp">
+
+                <TextView
+                    android:id="@+id/txt_resultado_peso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 KG"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_resultado_classe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Magreza grave"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="20sp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
